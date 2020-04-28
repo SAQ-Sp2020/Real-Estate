@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('file:C:/Users/AbhinayReddy/Documents/NetBeansProjects/mavenproject3/login.jpg');" stylesheets="@../../../styles/button_styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.rentmanagementapp.LoginPageController">
+   <children>
+      <TabPane layoutX="302.0" layoutY="75.0" prefHeight="210.0" prefWidth="263.0" stylesheets="@../../../styles/signin_tab.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="User Login">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="username" layoutX="88.0" layoutY="25.0" />
+                        <PasswordField fx:id="password" layoutX="88.0" layoutY="59.0" />
+                        <Label layoutX="10.0" layoutY="29.0" text="Username:" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="14.0" />
+                           </font></Label>
+                        <Label layoutX="12.0" layoutY="63.0" text="Password:" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="14.0" />
+                           </font></Label>
+                        <Button fx:id="signin" layoutX="142.0" layoutY="107.0" mnemonicParsing="false" onAction="#validateUserCredentials" text="Sign In" />
+                        <Label fx:id="error_message" layoutX="14.0" layoutY="90.0" textFill="#df2121">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="14.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Admin Login">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="211.0" prefWidth="255.0">
+                     <children>
+                        <TextField fx:id="admin_username" layoutX="91.0" layoutY="24.0" />
+                        <Label layoutX="10.0" layoutY="28.0" text="Username:" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="14.0" />
+                           </font></Label>
+                        <PasswordField fx:id="admin_password" layoutX="91.0" layoutY="56.0" />
+                        <Label layoutX="12.0" layoutY="60.0" text="Password:" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="14.0" />
+                           </font></Label>
+                        <Button fx:id="admin_signin" layoutX="138.0" layoutY="106.0" mnemonicParsing="false" onAction="#validateAdminCredentials" text="Sign In" />
+                        <Label fx:id="admin_error_message" layoutX="14.0" layoutY="82.0" textFill="#df2121">
+                           <font>
+                              <Font name="Calibri Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="104.0" layoutY="24.0" text="Welcome to property management!!" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold Italic" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="register" layoutX="97.0" layoutY="154.0" mnemonicParsing="false" onAction="#newUserRegistration" prefHeight="33.0" prefWidth="75.0" text="Register " textFill="WHITE" />
+      <Label layoutX="45.0" layoutY="112.0" text="New users register here." textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

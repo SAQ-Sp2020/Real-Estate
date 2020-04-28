@@ -1,0 +1,27 @@
+.tab-pane .tab
+{
+    -fx-background-color: #1979a9;
+
+}
+.tab-pane .tab:selected
+{
+    -fx-background-color: #195e83;
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+     -fx-font-family: calibri;
+     -fx-font-weight: Bold;
+-fx-font-style: italic;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill:#d7d3d3; 
+        /*#eee6e6;*/
+}
+

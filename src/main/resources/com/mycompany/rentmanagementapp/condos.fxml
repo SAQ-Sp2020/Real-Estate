@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="407.0" prefWidth="600.0" style="-fx-background-image: url('file:C:/Users/AbhinayReddy/Documents/NetBeansProjects/mavenproject3/background.jpg');" stylesheets="@../../../styles/tableview.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.rentmanagementapp.CondosController">
+     <children>
+      <TableView fx:id="allProperties" layoutY="45.0" prefHeight="313.0" prefWidth="600.0" style="-fx-background-image: url('file:C:/Users/AbhinayReddy/Documents/NetBeansProjects/mavenproject3/background.jpg');">
+        <columns>
+            <TableColumn fx:id="image" editable="false" prefWidth="119.33334350585938" sortable="false" text="Picture" />
+          <TableColumn fx:id="type" editable="false" prefWidth="138.0" sortable="false" text="Type of Property" />
+            <TableColumn fx:id="price" prefWidth="109.33331298828125" text="Price" />
+            <TableColumn fx:id="city" editable="false" prefWidth="120.00001525878906" sortable="false" text="City" />
+          <TableColumn fx:id="state" editable="false" prefWidth="107.33331298828125" sortable="false" text="State" />
+        </columns>
+      </TableView>
+      <Label fx:id="header_label" alignment="CENTER" layoutX="149.0" layoutY="7.0" prefHeight="31.0" prefWidth="277.0" stylesheets="@../../../styles/tableview.css" text="All Condomimiums" />
+      <Button fx:id="edit" layoutX="155.0" layoutY="368.0" mnemonicParsing="false" onAction="#allCondosHandler" prefHeight="31.0" prefWidth="113.0" text="Edit" />
+      <Button fx:id="back" layoutX="472.0" layoutY="368.0" mnemonicParsing="false" onAction="#allCondosHandler" prefHeight="31.0" prefWidth="113.0" text="Back" />
+      <Button fx:id="delete" layoutX="312.0" layoutY="369.0" mnemonicParsing="false" onAction="#allCondosHandler" prefHeight="30.0" prefWidth="113.0" text="Delete" />
+      <Button fx:id="view" layoutX="14.0" layoutY="369.0" mnemonicParsing="false" onAction="#allCondosHandler" prefHeight="30.0" prefWidth="113.0" text="Preview" />
+   </children> 
+</AnchorPane>

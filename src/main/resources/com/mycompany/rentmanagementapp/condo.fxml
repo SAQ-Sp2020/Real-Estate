@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="600.0" style="-fx-background-image: url('file:C:/Users/AbhinayReddy/Documents/NetBeansProjects/mavenproject3/background.jpg');" stylesheets="@../../../styles/property.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.rentmanagementapp.CondoController">
+    <children>
+      <Label fx:id="header_label" layoutX="252.0" layoutY="21.0" prefHeight="28.0" prefWidth="154.0" text="Condominium">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="110.0" text="Description" />
+      <TextArea fx:id="description" layoutX="204.0" layoutY="100.0" prefHeight="37.0" prefWidth="302.0" />
+      <Label layoutX="34.0" layoutY="141.0" prefHeight="28.0" prefWidth="154.0" text="Address" />
+      <TextField fx:id="address" layoutX="204.0" layoutY="142.0" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="34.0" layoutY="183.0" prefHeight="25.0" prefWidth="154.0" text="City" />
+      <TextField fx:id="city" layoutX="204.0" layoutY="183.0" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="34.0" layoutY="227.0" prefHeight="25.0" prefWidth="170.0" text="State" />
+      <TextField fx:id="state" layoutX="204.0" layoutY="227.0" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="34.0" layoutY="263.0" prefHeight="25.0" prefWidth="154.0" text="Postal Code" />
+      <TextField fx:id="postalCode" layoutX="204.0" layoutY="263.0" onKeyReleased="#inputHandler" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="34.0" layoutY="296.0" prefHeight="25.0" prefWidth="154.0" text="Purchase Price" />
+      <TextField fx:id="amount" layoutX="204.0" layoutY="296.0" onKeyTyped="#decimalHandler" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="34.0" layoutY="347.0" text="Bath Rooms" />
+      <TextField fx:id="bath" layoutX="204.0" layoutY="343.0" onKeyReleased="#inputHandler" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="34.0" layoutY="378.0" text="Bed Rooms" />
+      <TextField fx:id="bed" layoutX="204.0" layoutY="374.0" onKeyReleased="#inputHandler" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="34.0" layoutY="411.0" text="Annual Taxes" />
+      <TextField fx:id="taxes" layoutX="204.0" layoutY="407.0" onKeyTyped="#decimalHandler" prefHeight="25.0" prefWidth="302.0" />
+      <Label layoutX="34.0" layoutY="444.0" text="Management Fee" />
+      <TextField fx:id="fee" layoutX="204.0" layoutY="440.0" onKeyTyped="#decimalHandler" prefHeight="25.0" prefWidth="302.0" />
+      <Button fx:id="back" layoutX="400.0" layoutY="508.0" mnemonicParsing="false" onAction="#goBack" prefHeight="28.0" prefWidth="108.0" text="Back" />
+      <Button fx:id="edit" layoutX="80.0" layoutY="508.0" mnemonicParsing="false" onAction="#modify" prefHeight="28.0" prefWidth="108.0" text="Save" />
+      <ImageView fx:id="pic" fitHeight="86.0" fitWidth="133.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+   </children>   
+</AnchorPane>

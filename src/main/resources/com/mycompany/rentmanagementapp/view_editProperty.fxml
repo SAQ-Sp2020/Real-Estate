@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="600.0" style="-fx-background-image: url('file:C:/Users/AbhinayReddy/Documents/NetBeansProjects/mavenproject3/background.jpg');" stylesheets="@../../../styles/button_styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.rentmanagementapp.View_editPropertyController">
+    <children>
+      <Label fx:id="view_edit_label" alignment="CENTER" layoutX="189.0" layoutY="41.0" prefHeight="28.0" prefWidth="234.0" text="View/Edit Properties Menu" textFill="#131212">
+         <font>
+            <Font name="Calibri Bold Italic" size="20.0" />
+         </font></Label>
+      <Button fx:id="house" layoutX="221.0" layoutY="103.0" mnemonicParsing="false" onAction="#viewPropertyHandler" prefHeight="43.0" prefWidth="163.0" text="View/Edit House" textFill="#7e5e5e" />
+      <Button fx:id="apartment" layoutX="222.0" layoutY="179.0" mnemonicParsing="false" onAction="#viewPropertyHandler" prefHeight="43.0" prefWidth="163.0" text="View/Edit Apartment">
+         <font>
+            <Font name="Calibri Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="condo" layoutX="221.0" layoutY="247.0" mnemonicParsing="false" onAction="#viewPropertyHandler" prefHeight="43.0" prefWidth="163.0" text="View/Edit Condominium" />
+      <Button fx:id="back" layoutX="222.0" layoutY="394.0" mnemonicParsing="false" onAction="#viewPropertyHandler" prefHeight="43.0" prefWidth="163.0" text="Back" />
+      <Button fx:id="property" layoutX="221.0" layoutY="325.0" mnemonicParsing="false" onAction="#viewPropertyHandler" prefHeight="43.0" prefWidth="163.0" text="View/Edit Property" />
+   </children>
+</AnchorPane>

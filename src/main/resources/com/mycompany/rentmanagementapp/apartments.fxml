@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="600.0" style="-fx-background-image: url('file:C:/Users/AbhinayReddy/Documents/NetBeansProjects/mavenproject3/background.jpg');" stylesheets="@../../../styles/tableview.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.rentmanagementapp.ApartmentsController">
+   <children>
+      <TableView fx:id="allProperties" layoutY="45.0" prefHeight="313.0" prefWidth="600.0" style="-fx-background-image: url('file:C:/Users/AbhinayReddy/Documents/NetBeansProjects/mavenproject3/background.jpg');">
+        <columns>
+            <TableColumn fx:id="image" editable="false" maxWidth="1.7976931348623157E308" prefWidth="123.33334350585938" sortable="false" text="Image" />
+          <TableColumn fx:id="type" editable="false" prefWidth="130.66665136814117" sortable="false" text="Type of Property" />
+            <TableColumn fx:id="price" prefWidth="108.00003051757812" text="Price" />
+            <TableColumn fx:id="city" editable="false" prefWidth="129.33326721191406" sortable="false" text="City" />
+          <TableColumn fx:id="state" editable="false" minWidth="0.0" prefWidth="108.00006103515625" sortable="false" text="State" />
+        </columns>
+      </TableView>
+      <Label fx:id="header_label" alignment="CENTER" layoutX="149.0" layoutY="7.0" prefHeight="31.0" prefWidth="277.0" text="All Apartments" />
+      <Button fx:id="edit" layoutX="179.0" layoutY="367.0" mnemonicParsing="false" onAction="#allApartmentsHandler" prefHeight="31.0" prefWidth="101.0" text="Edit" />
+      <Button fx:id="delete" layoutX="324.0" layoutY="367.0" mnemonicParsing="false" onAction="#allApartmentsHandler" prefHeight="31.0" prefWidth="101.0" text="Delete" />
+      <Button fx:id="back" layoutX="469.0" layoutY="367.0" mnemonicParsing="false" onAction="#allApartmentsHandler" prefHeight="31.0" prefWidth="101.0" text="Back" />
+      <Button fx:id="view" layoutX="26.0" layoutY="367.0" mnemonicParsing="false" onAction="#allApartmentsHandler" prefHeight="31.0" prefWidth="101.0" text="Preview" />
+   </children>    
+</AnchorPane>
